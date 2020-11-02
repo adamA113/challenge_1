@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/adamA113/challenge_1#readme",
   "dependencies": {
-    "node.js": "0.0.1-security"
+    "node.js": "0.0.1-security",
+    "underscore": "^1.11.0"
   }
 }
