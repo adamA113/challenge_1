@@ -13,17 +13,23 @@ var count = 0;
 function renderImg(event) {
     
     var select = ["https://www.flaticon.com/premium-icon/icons/svg/2997/2997911.svg", "https://www.flaticon.com/svg/static/icons/svg/16/16894.svg"]
-    event.target.setAttribute("src", select[1]);
-    event.target.removeEventListener("click", renderImg)
     
-    if (true){
-        count++;
-        console.log(count)
+    count++;
+    console.log(count)
+
+    if (count % 2){
+        event.target.setAttribute("src", select[0]);
+        event.target.removeEventListener("click", renderImg);
+    }
+
+    else{
+        event.target.setAttribute("src", select[1]);
+        event.target.removeEventListener("click", renderImg);
+
     }
     // var currentImg = event.target.currentSrc;
     // currentImg = "https://www.flaticon.com/premium-icon/icons/svg/2997/2997911.svg";
     // console.log(img)
-    console.log(count)
     
 }
 
